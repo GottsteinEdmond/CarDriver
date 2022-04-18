@@ -1,6 +1,5 @@
 package com.company.entity;
 
-import static com.company.entity.Bank.getMoney;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,13 +34,14 @@ public class Person {
 //  }
 
   public void lendMoney(float ammount) {
-    var lentAmmount = getMoney(50000);
+    var lentAmmount =50000;
     increaseBudget(lentAmmount);
   }
 
   private void increaseBudget(float amount) {
     this.budget += amount;
   }
+
 
 
 
